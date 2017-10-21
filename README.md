@@ -19,6 +19,7 @@
    
    需下载Robo 3T对数据库进行操作.
    
-   最后在项目根目录 cmd 输入命令 node app.js 项目启动.
+  最后在项目根目录 cmd 输入命令 node app.js 项目启动.
+  
    
-   浏览器输入localhost:8081.
+  浏览器输入localhost:8081.
