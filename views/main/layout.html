@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="backimg"><img src="/public/images/banner.JPG"></div>
+        <div class="logo"><span></span><img src="/public/images/logo.png"></div>
+    </header>
+
+    <nav>
+        <div class="menu textCenter">
+            {% if category === '' %}
+            <a href="/" class="focus">首页</a>
+            {% else %}
+            <a href="/">首页</a>
+            {% endif %}
+            
+            {% for cate in categories %}
+            {% if category === cate.id %}
+            <a href="/?category={{cate.id}}" class="focus" >{{cate.name}}</a>
+            {% else %} 
+            <a href="/?category={{cate.id}}">{{cate.name}}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </nav>
+
+    <main class="clear">
+        <div class="mainLeft">
+              {% block content %} {% endblock %}
+        </div>
+        <div class="mainRight">
+
+            {% if userInfo._id %}
+            <div class="rightBox" id="userInfo">
+                <div class="title"><span>用户信息</span></div>
+                <p><span class="colDark username">{{userInfo.username}}</span></p>
+                {% if userInfo.isAdmin %}
+                <p>
+                    <span class="colDanger">你好,管理员!</span>
+                    <a href="/admin">进入管理</a>
+                </p>
+                {% else %}
+                <p><span class="colDanger">你好，欢迎光临我的博客！</span></p>
+                {% endif %}
+                <p><span class="colDark"><a href="javascript:;" id="logout">退出</a></span></p>
+
+            </div>
+            {% else %}
+            <div class="rightBox" id="loginBox">
+                <div class="title"><span>登录</span></div>
+                <div class="line"><span class="colDark">用户名：</span><input name="username" type="text" /><em></em></div>
+                <div class="line"><span class="colDark">密码：</span><input name="password" type="password" /><em></em></div>
+                <div class="line"><span class="colDark"></span><button>登 录</button></div>
+                <p class="textRight">还没注册？<a href="javascript:;" class="colMint">马上注册</a>　</p>
+                <p class="colWarning textCenter"></p>
+            </div>
+
+            <div class="rightBox hide" id="registerBox">
+                <div class="title"><span>注册</span></div>
+                <div class="line"><span class="colDark">用户名：</span><input name="username" type="text"/></div>
+                <div class="line"><span class="colDark">密码：</span><input name="password" type="password" /></div>
+                <div class="line"><span class="colDark">确认：</span><input name="repassword" type="password" /></div>
+                <div class="line"><span class="colDark"></span><button>注 册</button></div>
+                <p class="textRight">已有账号？<a href="javascript:;" class="colMint">马上登录</a>　</p>
+                <p class="colWarning textCenter"></p>
+            </div>
+            {%endif%}
+
+            <div class="rightBox">
+                <div class="title"><span>社区</span></div>
+                <p><a href="http://www.github.com" target="_blank" class="colDanger">GitHub</a></p>
+                <p><a href="https://juejin.im/" target="_blank" class="colDanger">掘金</a></p>
+                <p><a href="http://imweb.io/" target="_blank" class="colDanger">IMWeb前端博客</a></p>
+                <p><a href="http://div.io/#/welcome" target="_blank" class="colDanger">Div.IO</a></p>
+                <p><a href="https://www.w3cschool.cn/" target="_blank" class="colDanger">W3Cschool</a></p>
+                <p><a href="https://segmentfault.com/" target="_blank" class="colDanger">segmentfault</a></p>
+                <p><a href="http://www.jianshu.com/" target="_blank" class="colDanger">简书</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="/public/js/index.js"></script>
+</body>
+
+</html>

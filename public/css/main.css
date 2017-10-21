@@ -1,0 +1,372 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  background: #ebebeb;
+  font-family: '微软雅黑';
+  font-size: 14px; }
+
+z
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; }
+
+button {
+  border: none; }
+
+.bgDefault {
+  background-color: #515151 !important;
+  color: #FFF; }
+
+.bgPrimary {
+  background-color: #579ddb !important;
+  color: #FFF; }
+
+.bgInfo {
+  background-color: #46b9d8 !important;
+  color: #FFF; }
+
+.bgSuccess {
+  background-color: #97c664 !important;
+  color: #FFF; }
+
+.bgMint {
+  background-color: #48c5a3 !important;
+  color: #FFF; }
+
+.bgWarning {
+  background-color: #eaa642 !important;
+  color: #FFF; }
+
+.bgDanger {
+  background-color: #f76447 !important;
+  color: #FFF; }
+
+.bgPink {
+  background-color: #e15671 !important;
+  color: #FFF; }
+
+.bgPurple {
+  background-color: #986291 !important;
+  color: #FFF; }
+
+.bgDark {
+  background-color: #363c40 !important;
+  color: #FFF; }
+
+.bgBlue {
+  background-color: #27b9dd !important;
+  color: #FFF; }
+
+.bgGray {
+  background-color: #CCC !important;
+  color: #FFF; }
+
+.colDefault {
+  color: #515151 !important; }
+
+.colPrimary {
+  color: #579ddb !important; }
+
+.colInfo {
+  color: #46b9d8 !important; }
+
+.colSuccess {
+  color: #97c664 !important; }
+
+.colMint {
+  color: #48c5a3 !important; }
+
+.colWarning {
+  color: #eaa642 !important; }
+
+.colDanger {
+  color: #f76447 !important; }
+
+.colPink {
+  color: #e15671 !important; }
+
+.colPurple {
+  color: #986291 !important; }
+
+.colDark {
+  color: #363c40 !important; }
+
+.colBlue {
+  color: #27b9dd !important; }
+
+.textRight {
+  text-align: right; }
+
+.textLeft {
+  text-align: left; }
+
+.textCenter {
+  text-align: center; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.hide {
+  display: none; }
+
+.clear:after,
+.clear:before {
+  content: "";
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.clear {
+  *zoom: 1; }
+
+header {
+  position: relative;
+  overflow: hidden; }
+  header .backimg {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    header .backimg img {
+      margin: auto;
+      display: block;
+      height: 400px;
+      width: 100%; }
+  header .logo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    text-align: center; }
+    header .logo span {
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle; }
+    header .logo img {
+      display: inline-block;
+      vertical-align: middle; }
+
+nav {
+  height: 56px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 2px solid #e1e1e1;
+  background: #fff; }
+  nav .menu a {
+    display: inline-block;
+    padding: 0px 20px;
+    height: 56px;
+    line-height: 56px;
+    text-decoration: none; }
+    nav .menu a:hover, nav .menu a .focus {
+      margin-bottom: -2px;
+      border-bottom: 2px solid #ff0f14; }
+  nav .focus {
+    margin-bottom: -2px;
+    border-bottom: 2px solid #ff0f14; }
+
+main {
+  width: 1140px;
+  margin: 35px auto 0px; }
+  main .mainLeft {
+    width: 750px;
+    float: left; }
+    main .mainLeft .listBox {
+      background: #fff;
+      padding: 20px 35px;
+      text-align: center;
+      margin-bottom: 30px; }
+      main .mainLeft .listBox .function {
+        padding: 10px 0px;
+        text-align: left;
+        margin: 5px 0px 0px; }
+        main .mainLeft .listBox .function.bortop {
+          border-top: 1px solid #ddd; }
+        main .mainLeft .listBox .function a {
+          display: inline-block;
+          background: #ff0f14;
+          text-align: center;
+          width: 100px;
+          height: 34px;
+          line-height: 34px;
+          border-radius: 3px;
+          color: #fff;
+          font-size: 12px;
+          font-family: '微软雅黑';
+          text-decoration: none; }
+    main .mainLeft .textBox {
+      width: 658px;
+      height: 280px;
+      border: 1px solid #ddd;
+      line-height: 30px;
+      padding: 10px; }
+    main .mainLeft .em {
+      font-size: 12px;
+      float: right; }
+    main .mainLeft .message textarea {
+      float: left;
+      padding: 10px;
+      width: 580px;
+      height: 48px;
+      border: 1px solid #1F89bf;
+      outline: 0;
+      resize: none; }
+    main .mainLeft .message .submit {
+      margin-top: -1px;
+      float: left;
+      padding: 10px;
+      width: 76px;
+      height: 72px;
+      background: #1F89bf;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer; }
+    main .mainLeft .messageBox {
+      border-radius: 5px;
+      padding: 5px 10px 10px;
+      margin-bottom: 10px;
+      text-align: left; }
+      main .mainLeft .messageBox .name {
+        border-bottom: 1px solid #fff;
+        line-height: 36px;
+        font-size: 16px; }
+      main .mainLeft .messageBox p {
+        margin: 0px; }
+  main .mainRight {
+    width: 360px;
+    float: right; }
+    main .mainRight .rightBox {
+      background: #fff;
+      padding: 16px 30px;
+      margin-bottom: 30px; }
+      main .mainRight .rightBox .title {
+        border-bottom: 1px solid #ebebeb;
+        font-size: 18px;
+        margin-bottom: 20px; }
+        main .mainRight .rightBox .title span {
+          display: inline-block;
+          margin-bottom: -1px;
+          height: 36px;
+          line-height: 36px;
+          border-bottom: 1px solid #ff0f14;
+          padding: 0px 20px 0px 0px; }
+      main .mainRight .rightBox button {
+        background: #ff0f14;
+        width: 100%;
+        height: 34px;
+        cursor: pointer;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 12px;
+        font-family: '微软雅黑'; }
+      main .mainRight .rightBox .line {
+        margin-bottom: 10px;
+        position: relative; }
+        main .mainRight .rightBox .line.error em {
+          width: 20px;
+          height: 20px;
+          display: block;
+          position: absolute;
+          top: 8px;
+          right: 25px;
+          cursor: pointer;
+          background: url(../images/close.png) no-repeat center center;
+          background-size: 80% 80%; }
+        main .mainRight .rightBox .line span {
+          width: 60px;
+          display: inline-block;
+          text-align: right; }
+        main .mainRight .rightBox .line input {
+          width: 210px;
+          height: 34px;
+          line-height: 34px;
+          border: 1px solid #ddd;
+          background: none;
+          padding: 0px 5px; }
+        main .mainRight .rightBox .line button {
+          background: #ff0f14;
+          width: 222px;
+          height: 34px;
+          cursor: pointer;
+          border-radius: 3px;
+          color: #fff;
+          font-size: 12px;
+          font-family: '微软雅黑'; }
+        main .mainRight .rightBox .line em {
+          display: none; }
+  main .listBoxMore {
+    cursor: pointer; }
+
+dfn {
+  text-align: left;
+  font-style: normal;
+  display: block;
+  font-size: 16px;
+  line-height: 26px; }
+
+.pager {
+  padding: 20px;
+  margin-bottom: 30px;
+  background: #fff; }
+  .pager ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    .pager ul li {
+      display: inline; }
+      .pager ul li a {
+        text-decoration: none;
+        color: #333; }
+    .pager ul .previous > a, .pager ul .previous > span {
+      float: left; }
+    .pager ul .next > a, .pager ul .next > span {
+      float: right; }
+
+footer {
+  background: #202020; }
+  footer .footMain {
+    width: 1140px;
+    margin: 0px auto; }
+  footer .title {
+    border-bottom: 1px solid #ebebeb;
+    font-size: 18px;
+    margin-bottom: 20px; }
+    footer .title em {
+      display: inline-block;
+      margin-bottom: -1px;
+      height: 36px;
+      line-height: 36px;
+      border-bottom: 1px solid #ff0f14;
+      padding: 0px 20px 0px 0px;
+      color: #fff;
+      font-style: normal; }
+  footer .fotBox {
+    width: 28%;
+    float: left;
+    padding: 20px 0px;
+    margin: 0px 2%;
+    color: #979797; }
+    footer .fotBox span {
+      display: inline-block;
+      padding: 3px 5px;
+      border: 1px solid #303030;
+      margin: 5px;
+      color: #979797; }
+
+.copyright {
+  height: 79px;
+  background: #111111;
+  line-height: 79px;
+  border-top: 1px solid #303030;
+  color: #555; }
+
+/*# sourceMappingURL=main.css.map */
